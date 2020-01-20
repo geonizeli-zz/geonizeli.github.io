@@ -28,6 +28,9 @@ body {
   background: #000000;
   margin: 2rem;
 }
+p {
+  text-align: justify;
+}
 section {
   background-color: rgba(0, 0, 0, 0.452);
   /*box-shadow: 4px 4px 10px rgb(53, 53, 53);*/

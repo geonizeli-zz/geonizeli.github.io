@@ -4,14 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>João Victor Geonizeli</title>
-  
+
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="shortcut icon" href="./public/animated_favicon.gif" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="hello box">
+  <section class="hello">
     <div class="photo">
       <img src="./public/profile.jpg">
     </div>
@@ -27,7 +27,7 @@
     </div>
   </section>
   <br>
-  <section class="about box">
+  <section class="about">
     <div>
       <h3>About Me</h3>
     </div>
@@ -39,24 +39,44 @@
     </div>
   </section>
   <br>
-  <section class="projects box">
+  <section class="projects">
     <div>
       <h3>Projects</h3>
     </div>
-    <div class="project">
+    <button class="accordion">
+      <h4>Messenger</h4>
+    </button>
+    <div class="panel">
       <div>
-        <h4>OneBit Messenger</h4>
-        <p>A simple Messenger App constructed on Rails that implement Jobs, Channel, Authentication and File Uploads</p>
-    </div>
+        <ul>
+          <li>A simple Messenger App constructed on Rails that implement Jobs, Channel, Authentication and File Uploads</li>
+          <li>I implemented chatting files</li>
+        </ul>
+      </div>
       <div class="projects-images">
         <img src="./public/screenshots/login.png" alt="Login screen">
         <img src="./public/screenshots/chat.png" alt="Chat screen">
         <img src="./public/screenshots/file.png" alt="File sending">
       </div>
-  </div>
+    </div>
+
+    <button class="accordion">
+      <h4>Exchange</h4>
+    </button>
+    <div class="panel">
+      <div>
+        <ul>
+          <li>A simple Exchange App constructed on Rails that implement API consumption</li>
+          <li>I implemented exchange historys</li>
+        </ul>
+      </div>
+      <div class="projects-images">
+        <img src="./public/screenshots/exchange.png" alt="Single page application">
+      </div>
+    </div>
   </section>
   <br>
-  <section class="social box">
+  <section class="social">
     <div class="images">
       <div><h3>Find me at</h3></div>
     </div>
@@ -70,5 +90,22 @@
     </div>
   </section>
 
+  <!-- SCRIPTS -->
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
   <script src="https://kit.fontawesome.com/fdd7a5f15f.js" crossorigin="anonymous"></script>
 </html>
