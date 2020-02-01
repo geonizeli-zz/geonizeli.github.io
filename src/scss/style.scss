@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
 
 body {
   background: #000000;
@@ -52,7 +53,7 @@ section {
   }
 }
 
-.card {
+.block {
   &__title h3 {
     font-size: 3rem;
   }
@@ -72,6 +73,24 @@ section {
       display: inline;
       padding: 2rem;
     }
+  }
+}
+
+.card {
+  background-color: #131313;
+  border: #2e2e2e solid 2px;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  &__title {
+  }
+  &__description {
+  }
+  &__stacks li {
+    background-color: #1b206d;
+    padding: 1rem;
+  }
+  &__animation {
   }
 }
 
