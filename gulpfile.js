@@ -26,7 +26,7 @@ function scssTask() {
 
 // Watch task
 function watchTask() {
-  gulp.watch('src/scss/style.scss', scssTask);
+  gulp.watch('src/scss/*.scss', scssTask);
 }
 
 // Default task

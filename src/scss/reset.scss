@@ -22,6 +22,8 @@ blockquote,
 dl,
 dd {
 margin: 0;
+list-style-type: none;
+padding-inline-start: 0;
 }
 body {
 min-height: 100vh;
@@ -59,4 +61,10 @@ scroll-behavior: auto !important;
 }
 a, a:hover, a:visited{
 text-decoration: none;
+}
+html{
+font-size: 62.5%;
+}
+ul{
+padding-inline-start: 0;
 }

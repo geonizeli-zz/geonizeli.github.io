@@ -25,86 +25,30 @@
       <img src="./public/icons/ocarina.png">
     </div>
   </section>
-  <br>
-  <section class="about">
-    <div>
+  <section class="card">
+    <div class="card__title">
       <h3>About Me</h3>
     </div>
-    <div>
-      <ul>
-        <li><p>I am a Web Developer specialized in Rails, Ruby, Graphql and Heroku, eternally in love for Linux, algorithms and technology. </p></li>
-        <li><p>I love play League of Legends and Zelda (my favorite is Ocaria of Time), this is one of my hobbies, I also love learn new technologys  </p></li>
+    <div class="card__text">
+        <p>I am a Web Developer specialized in Rails, Ruby, Graphql and Heroku, eternally in love for Linux, algorithms and technology. </p>
+        <p>I love play League of Legends and Zelda (my favorite is Ocaria of Time), this is one of my hobbies, I also love learn new technologys  </p>
       </ul>
     </div>
   </section>
-  <br>
-  <section class="projects">
-    <div>
-      <h3>Projects</h3>
+  <section class="card">
+    <div class="card__title">
+      <h3>Find me at</h3>
     </div>
-    <button class="accordion">
-      <h4>Messenger</h4>
-    </button>
-    <div class="panel">
-      <div>
-        <ul>
-          <li>A simple Messenger App constructed on Rails that implement Jobs, Channel, Authentication and File Uploads</li>
-          <li>I implemented chatting files</li>
-        </ul>
-      </div>
-      <div class="projects-images">
-        <img src="./public/screenshots/login.png" alt="Login screen">
-        <img src="./public/screenshots/chat.png" alt="Chat screen">
-        <img src="./public/screenshots/file.png" alt="File sending">
-      </div>
-    </div>
-
-    <button class="accordion">
-      <h4>Exchange</h4>
-    </button>
-    <div class="panel">
-      <div>
-        <ul>
-          <li>A simple Exchange App constructed on Rails that implement API consumption</li>
-          <li>I implemented exchange historys</li>
-        </ul>
-      </div>
-      <div class="projects-images">
-        <img src="./public/screenshots/exchange.png" alt="Single page application">
-      </div>
-    </div>
-  </section>
-  <br>
-  <section class="social">
-    <div class="images">
-      <div><h3>Find me at</h3></div>
-    </div>
-    <div>
+    <div class="card__text">
       <ul>
-        <li><i class="fab fa-github"></i> <a href="https://github.com/geonizeli">GitHub</a> @geonizeli</li>
-        <li><i class="fas fa-envelope"></i> <a href="https://github.com/geonizeli">E-mail</a> jvsouzax@gmail.com</li>
-        <li><i class="fab fa-instagram"></i> <a href="https://github.com/geonizeli">Instagram</a> @dev.joao</li>
-        <li><i class="fab fa-telegram-plane"></i> <a href="https://github.com/geonizeli">Telegram</a> @geonizeli</li>
+        <li><i class="fab fa-github"></i><a href="https://github.com/geonizeli"> GitHub</a> @geonizeli</li>
+        <li><i class="fas fa-envelope"></i><a href="https://github.com/geonizeli"> E-mail</a> jvsouzax@gmail.com</li>
+        <li><i class="fab fa-instagram"></i><a href="https://github.com/geonizeli"> Instagram</a> @dev.joao</li>
+        <li><i class="fab fa-telegram-plane"></i><a href="https://github.com/geonizeli"> Telegram</a> @geonizeli</li>
       </ul>
     </div>
   </section>
 
-  <!-- SCRIPTS -->
-  <script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-  </script>
   <script src="https://kit.fontawesome.com/fdd7a5f15f.js" crossorigin="anonymous"></script>
+</body>
 </html>
