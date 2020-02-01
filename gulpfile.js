@@ -9,7 +9,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 // Coloca o caminho dos arquivos aqui
 const files = {
-  scssPath: 'src/scss/style.scss',
+  scssPath: 'src/scss/*.scss',
   cssDest: 'src/css',
 }
 // Sass task
