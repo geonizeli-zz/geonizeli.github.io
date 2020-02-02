@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
 
+/* Variables */
+$border-color: #2a2a2a;
+$text-color: #ffffff;
+$link-color: $text-color;
+$link-houver-color: $text-color;
 html{
   font-size: 62.5%;
   font-family: 'Comfortaa', cursive;
@@ -9,9 +13,15 @@ html{
     font-size: 50%;
   }
 }
+
 body {
-  background: #000000;
-  color: #ffffff;
+  background: repeating-linear-gradient(
+    135deg,
+    #000000,
+    #000000 5px,
+    #0f0f0f 5px,
+    #0f0f0f 10px);
+  color: $text-color;
 }
 section {
   margin: 3rem;
@@ -57,7 +67,7 @@ section {
 .resume {
   &__title {
     font-size: 2.8rem;
-    border-bottom: #222222 solid 2px ;
+    border-bottom: $border-color solid 2px ;
   }
   &__content {
     padding: 1rem;
@@ -69,18 +79,18 @@ section {
 .portfolio {
   &__title {
     font-size: 2.8rem;
-    border-bottom: #222222 solid 2px;
+    border-bottom: $border-color solid 2px;
   }
   .cards {
     display: flex;
     flex-direction: row;
     .card {
       margin: 1rem;
-      border: #2a2a2a solid 1px;
+      border: $border-color solid 1px;
       text-align: center;
       &-content {
         font-size: 2rem;
-        border-top: #2a2a2a solid 1px;
+        border-top: $border-color solid 1px;
       }
     }
   }
@@ -89,7 +99,7 @@ section {
 .network {
   &__title {
     font-size: 2.8rem;
-    border-bottom: #222222 solid 2px;
+    border-bottom: $border-color solid 2px;
   }
   &__content {
     font-size: 2rem;
@@ -97,9 +107,9 @@ section {
     & li {
       display: inline-block;
       & a {
-        color: #ffffff;
+        color: $link-color;
         &:hover {
-          color: #07e7d5;
+          color: $link-houver-color;
         }
       }
     }
