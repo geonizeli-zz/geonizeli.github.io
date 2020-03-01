@@ -1,3 +1,4 @@
+@import './reset.scss';
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
 
@@ -6,12 +7,14 @@ $border-color: #2a2a2a;
 $text-color: #ffffff;
 $link-color: $text-color;
 $link-houver-color: $text-color;
-html{
+
+html {
   font-size: 62.5%;
   font-family: 'Comfortaa', cursive;
   @media screen and (max-width: 800px) {
     font-size: 50%;
   }
+
 }
 
 body {
@@ -23,9 +26,16 @@ body {
     #0f0f0f 10px);
   color: $text-color;
 }
+
 section {
   margin: 3rem;
 }
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
 .apresentation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -79,21 +89,42 @@ section {
 .portfolio {
   &__title {
     font-size: 2.8rem;
-    border-bottom: $border-color solid 2px;
+    border-bottom: $border-color solid 2px ;
   }
-  .cards {
-    display: flex;
-    flex-direction: row;
-    .card {
-      margin: 1rem;
-      border: $border-color solid 1px;
-      text-align: center;
-      &-content {
-        font-size: 2rem;
-        border-top: $border-color solid 1px;
-      }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  &__content {
+    margin: auto;
+    font-size: 2rem;
+  }
+  &__button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2.3rem;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 5px;
+    &:hover {
+      background-color: #ffffff44;
     }
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .network {

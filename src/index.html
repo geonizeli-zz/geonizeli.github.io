@@ -4,71 +4,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>João Victor Geonizeli</title>
-  <link rel="stylesheet" href="./css/reset.css">
+
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./public/animated_favicon.gif" type="image/x-icon">
+  <script src="./javascript/functions.js"></script>
 </head>
 <body>
-  <section class="apresentation">
-    <div class="apresentation__photo">
-      <img src="https://www.gravatar.com/avatar/44bbbafc320bb1bcec601f1c4eac6f9a?s=400">
-    </div>
+  <div class="container">
+    <section class="apresentation">
+        <div class="apresentation__photo">
+          <img src="https://www.gravatar.com/avatar/44bbbafc320bb1bcec601f1c4eac6f9a?s=400">
+        </div>
 
-    <div class="apresentation__name">
-      João Victor Geonizeli
-    </div>
+        <div class="apresentation__name">
+          João Victor Geonizeli
+        </div>
 
-    <div class="apresentation__stacks">
-      <img src="./public/icons/ruby.png">
-      <img src="./public/icons/linux.png">
-      <img src="./public/icons/heroku.png">
-      <img src="./public/icons/triforce.png">
-    </div>
-  </section>
+        <div class="apresentation__stacks">
+          <img src="./public/icons/ruby.png">
+          <img src="./public/icons/linux.png">
+          <img src="./public/icons/heroku.png">
+          <img src="./public/icons/triforce.png">
+        </div>
+      </section>
 
-  <section class="resume">
-    <div class="resume__title">
-      About Me
-    </div>
-    <div class="resume__content">
+      <section class="resume">
+        <div class="resume__title">
+          About Me
+        </div>
+      <div class="resume__content">
         <p>I am a Web Developer specialized in Rails, Ruby, Graphql and Heroku, eternally in love for Linux, algorithms and technology. I love play League of Legends and Zelda (my favorite is Ocaria of Time), this is one of my hobbies, I also love learn new technologys and I have photophobia, that's why this page is a black bench.</p>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="portfolio">
-    <div class="portfolio__title">
-      Portfolio
-    </div>
-    <div class="cards">
-      <div class="card">
-        <div class="card__title">
-
-        </div>
-        <div class="card__content">
-
-        </div>
-        <div class="card__image">
-
+    <section class="portfolio">
+      <div class="portfolio__title">
+        Portfolio
+      </div>
+      <div class="cards">
+        <button class="card__button" onclick={displayCard(1)}>
+          IoT Endpoint
+        </button>
+        <div class="card hidden" id="1">
+          <div class="card__content">
+            Relay and RGB control using MQTT, ESP32, Node-Red and IBM Watson.
+          </div>
+          <div class="card__image">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+            src="https://assets8.lottiefiles.com/packages/lf20_SkhtL8.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px;"
+            loop
+            autoplay >
+          </lottie-player>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="network">
-    <div class="network__title">
-      Find me at
-    </div>
-    <div class="network__content">
-      <ul>
-        <li><a href="http://linkedin.com/in/geonizeli"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-        <li><a href="https://github.com/geonizeli"><i class="fab fa-github"></i> GitHub</a></li>
-        <li><a href="https://github.com/geonizeli"><i class="fas fa-envelope"></i> E-mail</a></li>
-        <li><a href="https://github.com/geonizeli"><i class="fab fa-instagram"></i> Instagram</a></li>
-        <li><a href="https://github.com/geonizeli"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
-      </ul>
-    </div>
-  </section>
+    <section class="network">
+      <div class="network__title">
+        Find me at
+      </div>
+      <div class="network__content">
+        <ul>
+          <li><a href="http://linkedin.com/in/geonizeli"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+          <li><a href="https://github.com/geonizeli"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://github.com/geonizeli"><i class="fas fa-envelope"></i> E-mail</a></li>
+          <li><a href="https://github.com/geonizeli"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://github.com/geonizeli"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+        </ul>
+      </div>
+    </section>
 
-  <script src="https://kit.fontawesome.com/fdd7a5f15f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fdd7a5f15f.js" crossorigin="anonymous"></script>
+  </div>
 </body>
 </html>
