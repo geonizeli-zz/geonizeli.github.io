@@ -24,16 +24,25 @@ body {
     #000000 5px,
     #0f0f0f 5px,
     #0f0f0f 10px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
 }
 
 section {
-  margin: 3rem;
+  margin: auto 3rem;
+  padding-top: 3rem;
 }
 
 .container {
   max-width: 800px;
-  margin: auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .apresentation {
