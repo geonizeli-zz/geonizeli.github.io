@@ -144,12 +144,17 @@ section {
   &__content {
     font-size: 2rem;
     padding: 1rem;
-    & li {
-      display: inline-block;
-      & a {
-        color: $link-color;
-        &:hover {
-          color: $link-houver-color;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        a {
+          color: $link-color;
+          &:hover {
+            color: $link-houver-color;
+          }
         }
       }
     }
