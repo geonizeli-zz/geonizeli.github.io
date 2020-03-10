@@ -28,9 +28,9 @@
       </section>
 
       <section class="resume">
-        <div class="resume__title">
+        <h3>
           About Me
-        </div>
+        </h3>
       <div class="resume__content">
         <p>I am a Web Developer, currently working with Rails, Ruby, Graphql and Heroku, eternally in love for Linux, algorithms and technology.</p>
         <p>I love play League of Legends and Zelda (my favorite is Ocaria of Time), this is one of my hobbies.</p>
@@ -38,17 +38,20 @@
     </section>
 
     <section class="portfolio">
-      <div class="portfolio__title">
+      <h3>
         Portfolio
-      </div>
+      </h3>
       <div class="cards">
-        <button class="card__button" onclick={displayCard(1)}>
-          IoT Endpoint
-        </button>
-        <div class="card hidden" id="1">
-          <div class="card__content">
-            Relay and RGB control using MQTT, ESP32, Node-Red and IBM Watson.
+        <a class="card" href="https://github.com/geonizeli/iot-endpoint" target="_blank">
+          <div class="card__text">
+            <div class="card__text__title">
+              IoT Endpoint
+            </div>
+            <div class="card__text__description">
+              Relay and RGB control using MQTT, ESP32, Node-Red and IBM Watson.
+            </div>
           </div>
+
           <div class="card__image">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player
@@ -60,28 +63,36 @@
             autoplay >
             </lottie-player>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
     <section class="network">
-      <div class="network__title">
+      <h3>
         Find me at
-      </div>
+      </h3>
       <div class="network__content">
         <ul>
-          <li><a href="http://linkedin.com/in/geonizeli" target="_blank">
-            <i class="fab fa-linkedin"></i> Linkedin</a>
-          </li>
-          <li><a href="https://github.com/geonizeli" target="_blank">
-            <i class="fab fa-github"></i> GitHub</a>
-          </li>
-          <li><a href="https://twitter.com/joaovs_1" target="_blank">
-            <i class="fab fa-twitter"></i> Twitter</a>
-          </li>
-          <li><a href="https://t.me/geonizeli" target="_blank">
-            <i class="fab fa-telegram-plane"></i> Telegram</a>
-          </li>
+          <a href="http://linkedin.com/in/geonizeli" target="_blank">
+            <li>
+              <i class="fab fa-linkedin"></i> Linkedin
+            </li>
+          </a>
+          <a href="https://github.com/geonizeli" target="_blank">
+            <li>
+              <i class="fab fa-github"></i> GitHub
+            </li>
+          </a>
+          <a href="https://twitter.com/joaovs_1" target="_blank">
+            <li>
+              <i class="fab fa-twitter"></i> Twitter
+            </li>
+          </a>
+          <a href="https://t.me/geonizeli" target="_blank">
+            <li>
+              <i class="fab fa-telegram-plane"></i> Telegram
+            </li>
+          </a>
         </ul>
       </div>
     </section>
