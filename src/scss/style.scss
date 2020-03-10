@@ -20,7 +20,6 @@ body {
 
 section {
   margin: auto 3rem;
-  padding-top: 3rem;
 }
 
 .container {
@@ -122,9 +121,8 @@ section {
 
 .network {
   &__content {
+    padding-top: 10px;
     font-size: 2rem;
-    padding: 1rem;
-
     ul{
       display: flex;
       flex-direction: row;
