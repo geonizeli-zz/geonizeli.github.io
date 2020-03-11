@@ -46,8 +46,11 @@ section {
     margin: 0 auto;
     width: 28rem;
     border-radius: 50%;
-    border: $border-color solid 1px;
-    box-shadow: 0 0 0 2px $color-1, 0 0 20px $color-5;
+    transition: all ease 0.5s;
+    &:hover {
+      border: $border-color solid 1px;
+      box-shadow: 0 0 0 2px $color-1, 0 0 20px $color-5;
+    }
 
     }
   }
@@ -94,6 +97,8 @@ section {
   display: flex;
   flex-direction: row;
   border: transparent solid 1px;
+  transition: all ease 0.5s;
+
   @media (max-width: 800px) {
     flex-direction: column;
   }
@@ -110,6 +115,7 @@ section {
     }
   }
   &:hover {
+    transition: all ease 0.5s;
     border: $color-1 solid 1px;
     box-shadow: 0 0 0 2px $color-1, 0 0 20px $color-5;
     border-radius: 5px;
@@ -129,10 +135,12 @@ section {
       flex-direction: row;
       justify-content: space-between;
       li {
+        transition: all ease 0.5s;
         text-align: center;
         border: transparent solid 1px;
         padding: 10px;
         &:hover {
+          transition: all ease 0.5s;
           border: $color-1 solid 1px;
           box-shadow: 0 0 0 2px $color-1, 0 0 20px $color-5;
           border-radius: 5px;
